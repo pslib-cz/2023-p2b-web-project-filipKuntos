@@ -1,8 +1,41 @@
-header, footer{
+.header, .footer {
+    background-color: #FCD5CE;
+
+}
+
+body {
+    background-color: #F8EDEB;
+}
+
+.text{
+    background-color: white;
+    display: grid;
+    justify-content: center;
+
+}
+
+.section {
+
+    
+}
+
+
+.headline {
+    text-align: center;
+}
+
+.image-grid {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+}
+
+.svg {
+    display: flex;
+    
+}
+
+.footer {
     display: flex;
 }
 
-img {
-    height: auto;
-    width: 100%;
-}
