@@ -1,6 +1,28 @@
-.header, .footer {
+.header {
     background-color: #FCD5CE;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    
 
+}
+
+.footer {
+    background-color: #FCD5CE;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    align-items: flex-end;
+}
+
+
+.footer-text {
+    padding-left: 0.5em;
 }
 
 body {
@@ -11,17 +33,28 @@ body {
     background-color: white;
     display: grid;
     justify-content: center;
-
+    border: 1px solid black;
+    box-shadow: 2px 2px 10px gray;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    display: grid;
+    justify-content: center;
+    max-width: 560px;
+    min-width: 300px;
 }
 
-.section {
+.text h3 {
+    margin-bottom: 0em;
+}
 
-    
+.logo  {
+    margin-left: -2em;
 }
 
 
 .headline {
     text-align: center;
+    margin-top: 8em;
 }
 
 .image-grid {
@@ -35,7 +68,115 @@ body {
     
 }
 
-.footer {
-    display: flex;
+
+
+.hamburger {
+    display: none;
+    
+
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+
+}
+
+menu {
+    display: flex;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+}
+
+menu li {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .checkbox {
+        display: none;
+    }
+    .navbar:has(.checkbox:checked)
+
+    .navbar {
+        position: relative;
+    }
+    
+    menu {
+        position: absolute;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        top: 100%;
+        left: 0%;
+        width: 100%;
+        padding: 1em;
+        gap: 1em;
+        overflow: hidden;
+        background: white;
+        transition: transform 0.5s;
+        transform: scaleY(0);
+        transform-origin: top;
+    }
+
+    .navbar:has(.checkbox:checked) menu {
+        transform: scaleY(1);
+    }
+
+    .navbar:has(.checkbox:checked) .menu-toggle{
+        display: block;
+    }
+
+    .hamburger {
+        --line: 8px;
+
+        width: 40px;
+        aspect-ratio: 1/1;
+        display: flex;
+        flex-direction: column;
+        gap: var(--line);
+    }
+    .hamburger span {
+        height: var(--line);
+        width: 100%;
+        border-radius: calc(var(--line) / 2);
+        background:#000;
+        transition: transform 1s, opacity 0.2s 0.9s, translate .7s .8s;
+        transform-origin: right center;
+    }
+ 
+    .hamburger.is-active span:nth-of-type(1) {
+        transform: translateY(0%) rotate(340deg)
+         ;
+         translate: -2px;
+
+    }
+
+    .hamburger.is-active span:nth-of-type(2) {
+
+
+    }
+
+    .hamburger.is-active span:nth-of-type(3) {
+        transform: translateY(0%) 
+        rotate(-340deg);
+        translate: -2px;
+
+    }
+
+    menu.is-active {
+        position: static;
+        transform: scaleY(1);
+
+    }
+
+
+
+    menu li {
+        min-width: 4em;
+    }
+
+}
