@@ -18,6 +18,7 @@
     left: 0px;
     right: 0px;
     align-items: flex-end;
+    overflow: hidden;
 }
 
 
@@ -93,6 +94,72 @@ menu {
 
 menu li {
     display: block;
+}
+
+.login {
+    margin-top: 8em;
+    border: 2px solid black;
+    border-radius: 5%;
+    margin-bottom: 9em;
+}
+
+.login-picture {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.login-image figure {
+    margin: 1em;
+}
+
+.button {
+    font-weight: bold;
+    padding: 0.5em;
+
+}
+
+.login-headline {
+    text-align: center;
+}
+
+.login-text {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.login-mail, .login-password {
+    background-color: white; 
+    border: 1px solid black;
+    height: 2em;
+}
+
+.characters {
+    margin-top: 5em;
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.image-character {
+    position: absolute;
+    align-content: flex-end;
+    right: 0;
+
+}
+
+.characters ~ .text {
+    margin-bottom: 2em;
+}
+
+.image-character figure {
+    margin: 0;
+}
+
+.steam-link {
+    margin-bottom: 1em;
 }
 
 @media screen and (max-width: 768px) {
