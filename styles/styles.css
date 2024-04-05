@@ -10,6 +10,11 @@
 
 }
 
+.link a{
+    text-decoration: none;
+    color: black;
+}
+
 .image {
     width: 100%;
     margin: 0;
@@ -116,8 +121,9 @@ menu li {
     border: 2px solid black;
     border-radius: 5%;
     margin-bottom: 9em;
-    max-width: 660px;
+    max-width: 800px;
     min-width: 340px;
+
     
 }
 
@@ -141,6 +147,14 @@ menu li {
 .button {
     font-weight: bold;
     padding: 0.5em;
+    border: 1px solid black;
+    background-color: white;
+    min-width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    max-height: 40px;
 
 }
 
@@ -227,6 +241,7 @@ menu li {
 }
 .image-7 {
     grid-area: i-7;
+
 }
 
 
@@ -319,10 +334,15 @@ menu li {
 @media screen and (min-width: 1280px) {
     .grid {
         display: grid;
-        grid-template-areas: "t-1 i-1" "i-2 t-2" "t-3 i-3" "i-4 t-4" "t-5 i-5" "i-6 t-6" "t-7 i-7" ;
-        row-gap: 1em;
+        grid-template-areas: "t-1 i-1" "i-2 t-2" "t-3 i-3" "i-4 t-4" "t-5 i-5";
+
         justify-content: center;
         gap: 1em;
+        margin-bottom: 2em;
+    }
+
+    .grid-vn {
+        grid-template-areas: "t-1 i-1" "i-2 t-2" "t-3 i-3" "i-4 t-4" "t-5 i-5" "i-6 t-6" "t-7 i-7" ;
     }
     .image-grid {
         display: block;
@@ -346,12 +366,13 @@ menu li {
     }
 
     .login {
-
+        position: absolute;
+        top: 25%;
+        left: 40%;
+        margin-top: 0;
     }
 
-    .link a{
-        text-decoration: none;
-    }
+    
 
     .grid-column {
         display: grid;
@@ -361,6 +382,10 @@ menu li {
         gap: 1em;
         justify-items: center;
         margin-bottom: 2em;
+    }
+
+    .grid-column-characters {
+        grid-template-columns: 400px repeat(2, 400px) ;
     }
 
     .image-grid-1 {
@@ -397,5 +422,16 @@ menu li {
 
     .characters {
         display: grid;
+    }
+
+    .footer {
+        justify-content: space-around;
+
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .footer-gallery {
+        bottom: 0px;
     }
 }
