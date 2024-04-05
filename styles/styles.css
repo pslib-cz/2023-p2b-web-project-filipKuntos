@@ -10,6 +10,16 @@
 
 }
 
+.image {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.image-grid figure {
+    margin: 0;
+}
+
 .footer {
     background-color: #FCD5CE;
     display: flex;
@@ -19,6 +29,11 @@
     right: 0px;
     align-items: flex-end;
     overflow: hidden;
+    
+}
+
+.main-login ~ .footer {
+    bottom: 0px;
 }
 
 
@@ -40,7 +55,7 @@ body {
     padding-right: 0.5em;
     display: grid;
     justify-content: center;
-    max-width: 560px;
+    max-width: 540px;
     min-width: 300px;
 }
 
@@ -101,6 +116,14 @@ menu li {
     border: 2px solid black;
     border-radius: 5%;
     margin-bottom: 9em;
+    max-width: 660px;
+    min-width: 340px;
+    
+}
+
+.main-login {
+    display: grid;
+    justify-content: center;
 }
 
 .login-picture {
@@ -161,6 +184,51 @@ menu li {
 .steam-link {
     margin-bottom: 1em;
 }
+
+.text-1 {
+    grid-area: t-1;
+}
+.text-2 {
+    grid-area: t-2;
+}
+.text-3 {
+    grid-area: t-3;
+}
+.text-4 {
+    grid-area: t-4;
+}
+.text-5 {
+    grid-area: t-5;
+}
+.text-6 {
+    grid-area: t-6;
+}
+.text-7 {
+    grid-area: t-7;
+}
+
+.image-1 {
+    grid-area: i-1;
+}
+.image-2 {
+    grid-area: i-2;
+}
+.image-3 {
+    grid-area: i-3;
+}
+.image-4 {
+    grid-area: i-4;
+}
+.image-5 {
+    grid-area: i-5;
+}
+.image-6 {
+    grid-area: i-6;
+}
+.image-7 {
+    grid-area: i-7;
+}
+
 
 @media screen and (max-width: 768px) {
     .checkbox {
@@ -246,4 +314,88 @@ menu li {
         min-width: 4em;
     }
 
+}
+
+@media screen and (min-width: 1280px) {
+    .grid {
+        display: grid;
+        grid-template-areas: "t-1 i-1" "i-2 t-2" "t-3 i-3" "i-4 t-4" "t-5 i-5" "i-6 t-6" "t-7 i-7" ;
+        row-gap: 1em;
+        justify-content: center;
+        gap: 1em;
+    }
+    .image-grid {
+        display: block;
+        width: 100%;
+    }
+
+    .text p{
+        margin-right: 2em;
+    }
+    .characters {
+        justify-content: center;
+    }
+
+    .logo {
+        max-width: max-content;
+        
+    }
+
+    .header {
+        justify-content: center;
+    }
+
+    .login {
+
+    }
+
+    .link a{
+        text-decoration: none;
+    }
+
+    .grid-column {
+        display: grid;
+        grid-template-columns: 400px repeat(auto-fill, 400px) ;
+        row-gap: 1em;
+        justify-content: center;
+        gap: 1em;
+        justify-items: center;
+        margin-bottom: 2em;
+    }
+
+    .image-grid-1 {
+        grid-area: ig-1;
+    }
+
+    .image-grid-2 {
+        grid-area: ig-2;
+        margin-top: 10em;
+        top: 0;
+        position: absolute;
+        right: 16em;
+    }
+
+    .text-grid-1 {
+        grid-area: tg-1;
+       
+        margin-top: 10em;
+
+    }
+
+    .text-grid {
+        display: grid;
+        position: relative;
+        max-height: 560px;
+        top: 18em;
+    }
+
+    .grid-characters {
+        display: grid;
+        grid-template-areas: "ig-1 ig-2 " "ig-1 tg-1";
+        margin-top: 3em;
+    }
+
+    .characters {
+        display: grid;
+    }
 }
