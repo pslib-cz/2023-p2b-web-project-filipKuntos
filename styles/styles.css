@@ -173,17 +173,13 @@ menu li {
     height: 2em;
 }
 
-.characters {
-    margin-top: 5em;
-    display: flex;
-    align-items: flex-end;
 
-}
 
 .image-character {
     position: absolute;
     align-content: flex-end;
     right: 0;
+    top: 75%;
 
 }
 
@@ -242,6 +238,15 @@ menu li {
 .image-7 {
     grid-area: i-7;
 
+}
+
+.image-grid-1 {
+    margin-top: 8em;
+
+}
+
+.text-grid {
+    margin-bottom: 2em;
 }
 
 
@@ -372,6 +377,10 @@ menu li {
         margin-top: 0;
     }
 
+    .image-character {
+        position: inherit;
+    }
+
     
 
     .grid-column {
@@ -390,39 +399,33 @@ menu li {
 
     .image-grid-1 {
         grid-area: ig-1;
+        display: grid;
+        justify-content: flex-end;
     }
 
     .image-grid-2 {
         grid-area: ig-2;
         margin-top: 10em;
-        top: 0;
-        position: absolute;
-        right: 16em;
+        margin-left: 7em;
+
     }
 
     .text-grid-1 {
         grid-area: tg-1;
        
-        margin-top: 10em;
+        height: 320px;
 
     }
 
-    .text-grid {
-        display: grid;
-        position: relative;
-        max-height: 560px;
-        top: 18em;
-    }
+
 
     .grid-characters {
         display: grid;
-        grid-template-areas: "ig-1 ig-2 " "ig-1 tg-1";
+        grid-template-areas: "ig-1 ig-2" "ig-1 tg-1";
         margin-top: 3em;
     }
 
-    .characters {
-        display: grid;
-    }
+    
 
     .footer {
         justify-content: space-around;
