@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="../styles/styles.css" >
     <script src="../script.js"></script>
     <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery-bundle.min.css">
     <title>Gallery | NekoparaUniverse</title>
 </head>
 <body class="body">
@@ -37,45 +38,82 @@
         <div class="headline">
             <h1>Gallery</h1>
         </div>
-        <div class="grid-column">
+        <div id="gallery" class="grid-column thumbnails">
             <div class="image image-grid">
                 <figure>
-                    <img src="../Pictures/gallery/desktop-1.png" alt="Nekopara Vol.1">
+                    <a href="../Pictures/gallery/full-1.png">
+                        <img src="../Pictures/gallery/desktop-1.png" alt="Image from Nekopara Vol.1">
+                    </a>
                 </figure>
             </div>
             <div class="image image-grid">
                 <figure>
-                    <img src="../Pictures/gallery/desktop-2.png" alt="Nekopara Vol.0">
+                    <a href="../Pictures/gallery/full-2.png">
+                        <img src="../Pictures/gallery/desktop-2.png" alt="Image from Nekopara Vol.1">
+                    </a>
                 </figure>
             </div>
             <div class="image image-grid">
                 <figure>
-                    <img src="../Pictures/gallery/desktop-3.png" alt="Nekopara Vol.1">
+                    <a href="../Pictures/gallery/full-3.png">
+                        <img src="../Pictures/gallery/desktop-3.png" alt="Image from Nekopara Vol.1">
+                    </a>
                 </figure>
             </div>
             <div class="image image-grid">
                 <figure>
-                    <img src="../Pictures/gallery/desktop-4.png" alt="Nekopara Vol.2">
+                    <a href="../Pictures/gallery/full-4.png">
+                        <img src="../Pictures/gallery/desktop-4.png" alt="Image from Nekopara Vol.0">
+                    </a>
                 </figure>
             </div>
             <div class="image image-grid">
                 <figure>
-                    <img src="../Pictures/gallery/desktop-5.png" alt="Nekopara Vol.3">
+                    <a href="../Pictures/gallery/full-5.png">
+                        <img src="../Pictures/gallery/desktop-5.png" alt="Image from Nekopara Vol.0">
+                    </a>
                 </figure>
             </div>
             <div class="image image-grid">
                 <figure>
-                    <img src="../Pictures/gallery/desktop-6.png" alt="Nekopara Vol.4">
+                    <a href="../Pictures/gallery/full-6.png">
+                        <img src="../Pictures/gallery/desktop-6.png" alt="Image from Nekopara Extra">
+                    </a>
                 </figure>
             </div>
             <div class="image image-grid">
                 <figure>
-                    <img src="../Pictures/gallery/desktop-7.png" alt="Nekopara Vol.4">
+                    <a href="../Pictures/gallery/full-7.png">
+                        <img src="../Pictures/gallery/desktop-7.png" alt="Image from Nekopara Vol.2">
+                    </a>
                 </figure>
             </div>
             <div class="image image-grid">
                 <figure>
-                    <img src="../Pictures/gallery/desktop-8.png" alt="Nekopara Catboys Paradise">
+                    <a href="../Pictures/gallery/full-8.png">
+                        <img src="../Pictures/gallery/desktop-8.png" alt="Image from Nekopara Vol.2">
+                    </a>
+                </figure>
+            </div>
+            <div class="image image-grid">
+                <figure>
+                    <a href="../Pictures/gallery/full-9.png">
+                        <img src="../Pictures/gallery/desktop-9.png" alt="Image from Nekopara Vol.2">
+                    </a>
+                </figure>
+            </div>
+            <div class="image image-grid">
+                <figure>
+                    <a href="../Pictures/gallery/full-10.png">
+                        <img src="../Pictures/gallery/desktop-10.png" alt="Image from Nekopara Vol.3">
+                    </a>
+                </figure>
+            </div>
+            <div class="image image-grid">
+                <figure>
+                    <a href="../Pictures/gallery/full-11.png">
+                        <img src="../Pictures/gallery/desktop-11.png" alt="Image from Nekopara Vol.3">
+                    </a>
                 </figure>
             </div>
         </div>
@@ -103,5 +141,20 @@
         </div>
         
     </footer>
+    <script type="module">
+        import lightgallery from 'https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/+esm'
+        import lgThumbnail from 'https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/thumbnail/+esm'
+        import lgPager from 'https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/pager/+esm'
+        import lgZoom from 'https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/zoom/+esm'
+        import lgAutoplay from 'https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/autoplay/+esm'
+
+        lightgallery(document.querySelector('.thumbnails'), 
+        {
+            selector: document.querySelectorAll('.thumbnails a'),
+            plugins: [lgThumbnail, lgPager, lgZoom, lgAutoplay],
+            slideShowAutoplay: true,
+            slideShowInterval:2000,
+        });
+    </script>
 </body>
 </html>
