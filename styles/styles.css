@@ -62,6 +62,7 @@ body {
     justify-content: center;
     max-width: 540px;
     min-width: 300px;
+    margin: 1em;
 }
 
 .text h3 {
@@ -101,7 +102,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 1em;
 
 }
 
@@ -195,50 +196,11 @@ menu li {
     margin-bottom: 1em;
 }
 
-.text-1 {
-    grid-area: t-1;
-}
-.text-2 {
-    grid-area: t-2;
-}
-.text-3 {
-    grid-area: t-3;
-}
-.text-4 {
-    grid-area: t-4;
-}
-.text-5 {
-    grid-area: t-5;
-}
-.text-6 {
-    grid-area: t-6;
-}
-.text-7 {
-    grid-area: t-7;
+.steam-link a {
+    text-decoration: none;
 }
 
-.image-1 {
-    grid-area: i-1;
-}
-.image-2 {
-    grid-area: i-2;
-}
-.image-3 {
-    grid-area: i-3;
-}
-.image-4 {
-    grid-area: i-4;
-}
-.image-5 {
-    grid-area: i-5;
-}
-.image-6 {
-    grid-area: i-6;
-}
-.image-7 {
-    grid-area: i-7;
 
-}
 
 .image-grid-1 {
     margin-top: 8em;
@@ -248,6 +210,7 @@ menu li {
 .text-grid {
     margin-bottom: 2em;
 }
+
 
 
 @media screen and (max-width: 768px) {
@@ -336,29 +299,15 @@ menu li {
 
 }
 
-@media screen and (min-width: 1280px) {
-    .grid {
+@media screen and (min-width: 768px){
+    .grid-column {
         display: grid;
-        grid-template-areas: "t-1 i-1" "i-2 t-2" "t-3 i-3" "i-4 t-4" "t-5 i-5";
-
+        grid-template-columns:  repeat(auto-fill, 400px) ;
+    
         justify-content: center;
-        gap: 1em;
+        gap: .5em;
+        justify-items: center;
         margin-bottom: 2em;
-    }
-
-    .grid-vn {
-        grid-template-areas: "t-1 i-1" "i-2 t-2" "t-3 i-3" "i-4 t-4" "t-5 i-5" "i-6 t-6" "t-7 i-7" ;
-    }
-    .image-grid {
-        display: block;
-        width: 100%;
-    }
-
-    .text p{
-        margin-right: 2em;
-    }
-    .characters {
-        justify-content: center;
     }
 
     .logo {
@@ -369,6 +318,90 @@ menu li {
     .header {
         justify-content: center;
     }
+    .text p{
+        margin-right: 2em;
+    }
+
+    .grid {
+        display: grid;
+
+        justify-content: center;
+        gap: 1em;
+        margin-bottom: 2em;
+    }
+    .footer {
+        justify-content: space-around;
+
+    }
+
+    
+}
+
+@media screen and (min-width: 1280px) {
+    .text-1 {   
+        grid-area: t-1;
+    }
+    .text-2 {
+        grid-area: t-2;
+    }
+    .text-3 {
+        grid-area: t-3;
+    }
+    .text-4 {
+        grid-area: t-4;
+    }
+    .text-5 {
+        grid-area: t-5;
+    }
+    .text-6 {
+        grid-area: t-6;
+    }
+    .text-7 {
+        grid-area: t-7;
+    }
+    
+    .image-1 {
+        grid-area: i-1;
+    }
+    .image-2 {
+        grid-area: i-2;
+    }
+    .image-3 {
+        grid-area: i-3;
+    }
+    .image-4 {
+        grid-area: i-4;
+    }
+    .image-5 {
+        grid-area: i-5;
+    }
+    .image-6 {
+        grid-area: i-6;
+    }
+    .image-7 {
+        grid-area: i-7;
+    
+    }
+    
+    .grid {
+
+        grid-template-areas: "t-1 i-1" "i-2 t-2" "t-3 i-3" "i-4 t-4" "t-5 i-5";
+
+
+    }
+
+    .grid-vn {
+        grid-template-areas: "t-1 i-1" "i-2 t-2" "t-3 i-3" "i-4 t-4" "t-5 i-5" "i-6 t-6" "t-7 i-7" ;
+    }
+    .image-grid-character {
+        display: block;
+        width: 100%;
+    }
+
+    
+    
+
+    
 
     .login {
         position: absolute;
@@ -383,15 +416,7 @@ menu li {
 
     
 
-    .grid-column {
-        display: grid;
-        grid-template-columns: 400px repeat(auto-fill, 400px) ;
-        row-gap: 1em;
-        justify-content: center;
-        gap: 1em;
-        justify-items: center;
-        margin-bottom: 2em;
-    }
+    
 
     .grid-column-characters {
         grid-template-columns: 400px repeat(2, 400px) ;
@@ -427,10 +452,7 @@ menu li {
 
     
 
-    .footer {
-        justify-content: space-around;
-
-    }
+    
 }
 
 @media screen and (min-width: 1600px) {
