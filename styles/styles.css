@@ -26,6 +26,7 @@
 }
 
 .footer {
+    margin-top: 1em;
     background-color: #FCD5CE;
     display: flex;
     justify-content: space-between;
@@ -52,8 +53,6 @@ body {
 
 .text{
     background-color: white;
-    display: grid;
-    justify-content: center;
     border: 1px solid black;
     box-shadow: 2px 2px 10px gray;
     padding-left: 0.5em;
@@ -62,7 +61,8 @@ body {
     justify-content: center;
     max-width: 540px;
     min-width: 300px;
-    margin: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .text h3 {
@@ -90,6 +90,9 @@ body {
     
 }
 
+.svg figure {
+    margin: 1em;
+}
 
 
 .hamburger {
@@ -180,7 +183,7 @@ menu li {
     position: absolute;
     align-content: flex-end;
     right: 0;
-    top: 75%;
+    top: 33em;
 
 }
 
@@ -267,7 +270,7 @@ menu li {
     }
  
     .hamburger.is-active span:nth-of-type(1) {
-        transform: translateY(0%) rotate(340deg)
+        transform: translateY(20%) rotate(330deg)
          ;
          translate: -2px;
 
@@ -279,8 +282,8 @@ menu li {
     }
 
     .hamburger.is-active span:nth-of-type(3) {
-        transform: translateY(0%) 
-        rotate(-340deg);
+        transform: translateY(-20%) 
+        rotate(-330deg);
         translate: -2px;
 
     }
@@ -334,6 +337,19 @@ menu li {
 
     }
 
+    .text-grid {
+        display: grid;
+        justify-content: center;
+    }
+
+    .image-character {
+        top: 41em;
+        right: 5em;
+    }
+
+    .image-grid-1 {
+        justify-content: flex-start;
+    }
     
 }
 
@@ -386,7 +402,7 @@ menu li {
     .grid {
 
         grid-template-areas: "t-1 i-1" "i-2 t-2" "t-3 i-3" "i-4 t-4" "t-5 i-5";
-
+        gap: 2em;
 
     }
 
@@ -450,6 +466,10 @@ menu li {
         margin-top: 3em;
     }
 
+   .text {
+    margin-top: 0;
+    margin-bottom: 0;
+   }
     
 
     
