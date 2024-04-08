@@ -1,3 +1,9 @@
+/* styl pro body*/
+body {
+    background-color: #F8EDEB;
+}
+
+/* styly pro header*/
 .header {
     background-color: #FCD5CE;
     display: flex;
@@ -10,91 +16,12 @@
 
 }
 
-.link a{
-    text-decoration: none;
-    color: black;
-}
-
-.image {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.image-grid figure {
-    margin: 0;
-}
-
-.footer {
-    margin-top: 1em;
-    background-color: #FCD5CE;
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    align-items: flex-end;
-    overflow: hidden;
-    
-}
-
-.main-login ~ .footer {
-    bottom: 0px;
-}
-
-
-.footer-text {
-    padding-left: 0.5em;
-}
-
-body {
-    background-color: #F8EDEB;
-}
-
-.text{
-    background-color: white;
-    border: 1px solid black;
-    box-shadow: 2px 2px 10px gray;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    display: grid;
-    justify-content: center;
-    max-width: 540px;
-    min-width: 300px;
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-
-.text h3 {
-    margin-bottom: 0em;
-}
-
+/* hlavní logo stránky v header */
 .logo  {
     margin-left: -2em;
 }
 
-
-.headline {
-    text-align: center;
-    margin-top: 8em;
-}
-
-.image-grid {
-    width: 100%;
-    display: grid;
-    justify-content: center;
-}
-
-.svg {
-    display: flex;
-    
-}
-
-.svg figure {
-    margin: 1em;
-}
-
-
+/* styly pro navbar*/
 .hamburger {
     display: none;
     
@@ -120,6 +47,59 @@ menu li {
     display: block;
 }
 
+.link a{
+    text-decoration: none;
+    color: black;
+}
+
+/* nadpis stránky */
+.headline {
+    text-align: center;
+    margin-top: 8em;
+}
+
+/* podnadpis stránky*/
+.text h3 {
+    margin-bottom: 0em;
+}
+
+/* blok textu obsahující text*/
+.text{
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 2px 2px 10px gray;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    display: grid;
+    justify-content: center;
+    max-width: 540px;
+    min-width: 300px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/* styly pro steam odkaz*/
+.steam-link {
+    margin-bottom: 1em;
+}
+
+.steam-link a {
+    text-decoration: none;
+}
+
+/* odsazení pro blok textu na stránkách character*/
+.text-grid {
+    margin-bottom: 2em;
+}
+
+/* styly pro stránku login*/
+/* zarovnání loginu*/
+.main-login {
+    display: grid;
+    justify-content: center;
+}
+
+/* obalení loginu*/
 .login {
     margin-top: 8em;
     border: 2px solid black;
@@ -131,23 +111,16 @@ menu li {
     
 }
 
-.main-login {
-    display: grid;
-    justify-content: center;
+.login-headline {
+    text-align: center;
 }
 
-.login-picture {
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+.login-text {
+    padding-left: 2em;
+    padding-right: 2em;
 }
 
-.login-image figure {
-    margin: 1em;
-}
-
+/* pro tlačítko login-nefunkční*/
 .button {
     font-weight: bold;
     padding: 0.5em;
@@ -162,23 +135,68 @@ menu li {
 
 }
 
-.login-headline {
-    text-align: center;
-}
-
-.login-text {
-    padding-left: 2em;
-    padding-right: 2em;
-}
-
+/* pro vkládání E-mailu a hesla-nefunkční*/
 .login-mail, .login-password {
     background-color: white; 
     border: 1px solid black;
     height: 2em;
 }
 
+/*odsazení obrázků po stranách*/
+.login-picture {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
 
 
+/* styly pro footer*/
+.footer {
+    margin-top: 1em;
+    background-color: #FCD5CE;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    align-items: flex-end;
+    overflow: hidden;
+    
+}
+
+/* zarovnání footer dole*/
+.main-login + .footer {
+    bottom: 0px;
+}
+
+
+.footer-text {
+    padding-left: 0.5em;
+}
+
+/* styly pro footer svg */
+.svg {
+    display: flex;
+    
+}
+
+.svg figure {
+    margin: 1em;
+}
+
+
+
+/* styly pro obrázky*/
+/* má fungovat jako img obalený divem*/
+.image {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* pozicování malé postavy na stránkách character*/
 .image-character {
     position: absolute;
     align-content: flex-end;
@@ -187,35 +205,44 @@ menu li {
 
 }
 
-.characters ~ .text {
-    margin-bottom: 2em;
+/* otočení druhého obrázku */
+.login-image-2 {
+    transform: rotateY(180deg);
 }
 
+/* odsazení obrázků v loginu*/
+.login-image figure {
+    margin: 1em;
+}
+
+/* odsazení malé postavy na stránkách character*/
 .image-character figure {
     margin: 0;
 }
 
-.steam-link {
-    margin-bottom: 1em;
+/* pozicování obrázků používající grid na pozicování*/
+.image-grid {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    
 }
 
-.steam-link a {
-    text-decoration: none;
-}
-
-
-
+/* pozicování velké postavy na stránkách character*/
 .image-grid-1 {
     margin-top: 8em;
-
 }
 
-.text-grid {
-    margin-bottom: 2em;
+/* odsazení velké postavy na stránkách character*/
+.image-grid figure {
+    margin: 0;
 }
 
 
 
+
+
+/* hamburger menu*/
 @media screen and (max-width: 768px) {
     .checkbox {
         display: none;
@@ -302,15 +329,11 @@ menu li {
 
 }
 
+/* tablet*/
 @media screen and (min-width: 768px){
-    .grid-column {
-        display: grid;
-        grid-template-columns:  repeat(auto-fill, 400px) ;
-    
+
+    .header {
         justify-content: center;
-        gap: .5em;
-        justify-items: center;
-        margin-bottom: 2em;
     }
 
     .logo {
@@ -318,42 +341,57 @@ menu li {
         
     }
 
-    .header {
-        justify-content: center;
-    }
-    .text p{
-        margin-right: 2em;
-    }
-
+    /* základní grid pro stránky main page a visual novels*/
     .grid {
         display: grid;
-
         justify-content: center;
         gap: 1em;
         margin-bottom: 2em;
     }
-    .footer {
-        justify-content: space-around;
 
+    /* základní grid pro stránky characters a gallery*/
+    .grid-column {
+        display: grid;
+        grid-template-columns:  repeat(auto-fill, 400px) ;
+        justify-content: center;
+        gap: .5em;
+        justify-items: center;
+        margin-bottom: 2em;
     }
 
+    /* grid pro pozicování div textu*/
     .text-grid {
         display: grid;
         justify-content: center;
     }
 
+    /* odsazení textu*/
+    .text p{
+        margin-right: 2em;
+    }
+
+    /* zarovnání prvků ve footer*/
+    .footer {
+        justify-content: space-around;
+
+    }
+
+    /* zarovnání malé postavy na stránkách character*/
     .image-character {
         top: 41em;
         right: 5em;
     }
 
+    /* zarovnání velké postavy na stránkách character*/
     .image-grid-1 {
         justify-content: flex-start;
     }
     
 }
 
+/* notebook a desktop*/
 @media screen and (min-width: 1280px) {
+    /* grid area pro prvky na stránkách main page a visual novels*/
     .text-1 {   
         grid-area: t-1;
     }
@@ -398,83 +436,75 @@ menu li {
         grid-area: i-7;
     
     }
-    
-    .grid {
 
-        grid-template-areas: "t-1 i-1" "i-2 t-2" "t-3 i-3" "i-4 t-4" "t-5 i-5";
-        gap: 2em;
+    /* odsazení textu*/
+    .text {
+        margin-top: 0;
+        margin-bottom: 0;
+       }
 
-    }
-
-    .grid-vn {
-        grid-template-areas: "t-1 i-1" "i-2 t-2" "t-3 i-3" "i-4 t-4" "t-5 i-5" "i-6 t-6" "t-7 i-7" ;
-    }
-    .image-grid-character {
-        display: block;
-        width: 100%;
-    }
-
-    
-    
-
-    
-
+    /* pozicování login*/
     .login {
         position: absolute;
         top: 25%;
         left: 40%;
         margin-top: 0;
     }
+    
+    /* grid pro main page*/
+    .grid-index {
+        grid-template-areas: "t-1 i-1" "i-2 t-2" "t-3 i-3" "i-4 t-4" "t-5 i-5";
+        gap: 2em;
 
-    .image-character {
-        position: inherit;
     }
 
-    
+    /* grid pro visual novels*/
+    .grid-vn {
+        grid-template-areas: "t-1 i-1" "i-2 t-2" "t-3 i-3" "i-4 t-4" "t-5 i-5" "i-6 t-6" "t-7 i-7" ;
+        gap: 2em;
+    }
 
-    
-
-    .grid-column-characters {
+    /* grid pro characters*/
+    .grid-characters {
         grid-template-columns: 400px repeat(2, 400px) ;
     }
 
+    /* grid pro stránky character (jednotlivé stránky postav*/
+    .grid-character {
+        display: grid;
+        grid-template-areas: "ig-1 ig-2" "ig-1 tg-1";
+
+    }
+
+    /* odsazení textu na stránkách character*/
+    .text-grid-1 {
+        grid-area: tg-1;
+        height: 320px;
+    }
+
+    /* odsazení malé postavy na stránkách character*/
+    .image-grid-2 {
+        grid-area: ig-2;
+        margin-top: 12em;
+        margin-left: 10em;
+        position: inherit;
+        display: block;
+
+    }
+    
+
+    /* odsazení velké postavy na stránkách character*/
     .image-grid-1 {
         grid-area: ig-1;
         display: grid;
         justify-content: flex-end;
     }
 
-    .image-grid-2 {
-        grid-area: ig-2;
-        margin-top: 10em;
-        margin-left: 7em;
-
-    }
-
-    .text-grid-1 {
-        grid-area: tg-1;
-       
-        height: 320px;
-
-    }
-
-
-
-    .grid-characters {
-        display: grid;
-        grid-template-areas: "ig-1 ig-2" "ig-1 tg-1";
-        margin-top: 3em;
-    }
-
-   .text {
-    margin-top: 0;
-    margin-bottom: 0;
-   }
     
-
     
 }
 
+/* odsazení footer pro velké obrazovky*/
 @media screen and (min-width: 1600px) {
     .footer-gallery {
         bottom: 0px;
