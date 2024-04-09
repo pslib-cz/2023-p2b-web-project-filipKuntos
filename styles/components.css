@@ -3,27 +3,9 @@
     margin-left: -2em;
 }
 
-/* styly pro navbar*/
-.hamburger {
-    display: none;
-    
 
-}
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em;
 
-}
-
-menu {
-    display: flex;
-    gap: 2rem;
-    padding: 0;
-    margin: 0;
-}
 
 
 
@@ -116,24 +98,6 @@ menu {
     margin: 1em;
 }
 
-
-/* styly pro obrázky*/
-/* má fungovat jako img obalený divem*/
-.image {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-/* pozicování malé postavy na stránkách character*/
-.image-character {
-    position: absolute;
-    align-content: flex-end;
-    right: 0;
-    top: 33em;
-
-}
-
 /* otočení druhého obrázku */
 .login-image-2 {
     transform: rotateY(180deg);
@@ -149,20 +113,40 @@ menu {
     margin: 0;
 }
 
-/* pozicování obrázků používající grid na pozicování*/
-.image-grid {
-    width: 100%;
-    display: grid;
-    justify-content: center;
+/* tablet*/
+@media screen and (min-width: 768px){
+    .header {
+        justify-content: center;
+    }
+
+    .logo {
+        max-width: max-content;
+        
+    }
+
+ }
+
+
+
+@media screen and (min-width: 1280px) {
+    /* pozicování login*/
+    .login {
+        position: absolute;
+        top: 25%;
+        left: 40%;
+        margin-top: 0;
+    }
+
+    .text {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
     
 }
 
-/* pozicování velké postavy na stránkách character*/
-.image-grid-1 {
-    margin-top: 8em;
-}
-
-/* odsazení velké postavy na stránkách character*/
-.image-grid figure {
-    margin: 0;
+/* odsazení footer pro velké obrazovky*/
+@media screen and (min-width: 1600px) {
+    .footer-gallery {
+        bottom: 0px;
+    }
 }

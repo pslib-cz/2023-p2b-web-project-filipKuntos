@@ -16,7 +16,27 @@ body {
 
 }
 
+/* styly pro navbar*/
+.hamburger {
+    display: none;
+    
 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+
+}
+
+menu {
+    display: flex;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+}
 
 
 /* styly pro footer*/
@@ -32,6 +52,47 @@ body {
     overflow: hidden;
     
 }
+
+/* pozicování malé postavy na stránkách character*/
+.image-character {
+    position: absolute;
+    align-content: flex-end;
+    right: 0;
+    top: 33em;
+
+}
+
+/* styly pro obrázky*/
+/* má fungovat jako img obalený divem*/
+.image {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+/* pozicování obrázků používající grid na pozicování*/
+.image-grid {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    
+}
+
+/* pozicování velké postavy na stránkách character*/
+.image-grid-1 {
+    margin-top: 8em;
+}
+
+/* odsazení velké postavy na stránkách character*/
+.image-grid figure {
+    margin: 0;
+}
+
+
 
 
 /* hamburger menu*/
@@ -124,14 +185,7 @@ body {
 /* tablet*/
 @media screen and (min-width: 768px){
 
-    .header {
-        justify-content: center;
-    }
-
-    .logo {
-        max-width: max-content;
-        
-    }
+    
 
     /* základní grid pro stránky main page a visual novels*/
     .grid {
@@ -225,19 +279,7 @@ body {
     
     }
 
-    /* odsazení textu*/
-    .text {
-        margin-top: 0;
-        margin-bottom: 0;
-       }
-
-    /* pozicování login*/
-    .login {
-        position: absolute;
-        top: 25%;
-        left: 40%;
-        margin-top: 0;
-    }
+    
     
     /* grid pro main page*/
     .grid-index {
@@ -292,9 +334,3 @@ body {
     
 }
 
-/* odsazení footer pro velké obrazovky*/
-@media screen and (min-width: 1600px) {
-    .footer-gallery {
-        bottom: 0px;
-    }
-}
