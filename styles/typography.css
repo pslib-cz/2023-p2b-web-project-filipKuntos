@@ -8,6 +8,10 @@ menu li {
     color: black;
 }
 
+a:hover {
+    color: #F08080;
+}
+
 /* nadpis stránky */
 .headline {
     text-align: center;

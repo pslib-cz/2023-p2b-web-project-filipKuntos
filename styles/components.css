@@ -52,25 +52,24 @@
 
 
 /* pro tlačítko login-nefunkční*/
-.button {
-    font-weight: bold;
-    padding: 0.5em;
-    border: 1px solid black;
-    background-color: white;
-    min-width: 60px;
+.button-flex {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10%;
-    max-height: 40px;
+}
 
+.button {
+    width: 6em;
+    height: 2em;
+    background-color: white;
 }
 
 /* pro vkládání E-mailu a hesla-nefunkční*/
-.login-mail, .login-password {
-    background-color: white; 
-    border: 1px solid black;
+.input {
+    width: 90%;
     height: 2em;
+    border: 1px solid black;
+    
 }
 
 /*odsazení obrázků po stranách*/
