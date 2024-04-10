@@ -45,7 +45,7 @@ menu {
     background-color: #FCD5CE;
     display: flex;
     justify-content: space-between;
-    position: absolute;
+    
     left: 0px;
     right: 0px;
     align-items: flex-end;
@@ -342,6 +342,8 @@ menu {
     }
 
     
-    
+    .footer {
+        position: absolute;
+    }
 }
 

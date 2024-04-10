@@ -81,10 +81,7 @@
     
 }
 
-    /* zarovnání footer dole*/
-    .main-login + .footer {
-        bottom: 0px;
-    }
+    
 
 /* styly pro footer svg */
 .svg {
