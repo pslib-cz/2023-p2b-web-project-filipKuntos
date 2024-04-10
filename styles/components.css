@@ -3,13 +3,6 @@
     margin-left: -2em;
 }
 
-
-
-
-
-
-
-
 /* blok divu obsahující text*/
 .text{
     background-color: white;
@@ -64,9 +57,17 @@
     background-color: white;
 }
 
+.button:hover {
+    background-color: #FCD5CE;
+}
+
+.button:active {
+    background-color: #F08080;
+}
+
 /* pro vkládání E-mailu a hesla-nefunkční*/
 .input {
-    width: 90%;
+    width: 25em;
     height: 2em;
     border: 1px solid black;
     
@@ -132,7 +133,7 @@
     .login {
         position: absolute;
         top: 25%;
-        left: 40%;
+        left: 35%;
         margin-top: 0;
     }
 

@@ -182,11 +182,8 @@ menu {
 
 }
 
-/* tablet*/
-@media screen and (min-width: 768px){
-
-    
-
+/* menší než tablet*/
+@media screen and (min-width: 600px){ 
     /* základní grid pro stránky main page a visual novels*/
     .grid {
         display: grid;
@@ -194,6 +191,27 @@ menu {
         gap: 1em;
         margin-bottom: 2em;
     }
+
+    /* grid pro pozicování div textu*/
+    .text-grid {
+        display: grid;
+        justify-content: center;
+    }
+
+    /* zarovnání prvků ve footer*/
+    .footer {
+        justify-content: space-around;
+
+    }
+
+    /* zarovnání malé postavy na stránkách character*/
+    .image-character {
+        top: 41em;
+    }
+}
+
+/* tablet*/
+@media screen and (min-width: 768px){
 
     /* základní grid pro stránky characters a gallery*/
     .grid-column {
@@ -205,18 +223,10 @@ menu {
         margin-bottom: 2em;
     }
 
-    /* grid pro pozicování div textu*/
-    .text-grid {
-        display: grid;
-        justify-content: center;
-    }
+    
 
 
-    /* zarovnání prvků ve footer*/
-    .footer {
-        justify-content: space-around;
-
-    }
+    
 
     /* zarovnání malé postavy na stránkách character*/
     .image-character {
