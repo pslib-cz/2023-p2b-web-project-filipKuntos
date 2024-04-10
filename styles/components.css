@@ -33,10 +33,9 @@
 
 /* obalení loginu*/
 .login {
-    margin-top: 8em;
+    margin-top: 10em;
     border: 2px solid black;
     border-radius: 5%;
-    margin-bottom: 9em;
     max-width: 800px;
     min-width: 340px;
 
@@ -82,7 +81,10 @@
     
 }
 
-
+    /* zarovnání footer dole*/
+    .main-login + .footer {
+        bottom: 0px;
+    }
 
 /* styly pro footer svg */
 .svg {
@@ -129,7 +131,7 @@
     .login {
         position: absolute;
         top: 25%;
-        left: 35%;
+        left: 40%;
         margin-top: 0;
     }
 
@@ -138,10 +140,7 @@
         margin-bottom: 0;
     }
 
-        /* zarovnání footer dole*/
-    .main-login + .footer {
-        bottom: 0px;
-    }
+    
 
     
 }
