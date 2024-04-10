@@ -67,7 +67,7 @@
 
 /* pro vkládání E-mailu a hesla-nefunkční*/
 .input {
-    width: 25em;
+    width: 95%;
     height: 2em;
     border: 1px solid black;
     
@@ -82,10 +82,6 @@
     
 }
 
-/* zarovnání footer dole*/
-.main-login + .footer {
-    bottom: 0px;
-}
 
 
 /* styly pro footer svg */
@@ -141,6 +137,12 @@
         margin-top: 0;
         margin-bottom: 0;
     }
+
+        /* zarovnání footer dole*/
+    .main-login + .footer {
+        bottom: 0px;
+    }
+
     
 }
 
