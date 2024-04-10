@@ -36,6 +36,7 @@
     margin-top: 10em;
     border: 2px solid black;
     border-radius: 5%;
+    margin-bottom: 7em;
     max-width: 800px;
     min-width: 340px;
 
@@ -81,7 +82,10 @@
     
 }
 
-    
+    /* zarovnání footer dole*/
+    .main-login + .footer {
+        bottom: 0px;
+    }
 
 /* styly pro footer svg */
 .svg {
@@ -125,12 +129,6 @@
 
 @media screen and (min-width: 1280px) {
     /* pozicování login*/
-    .login {
-        position: absolute;
-        top: 25%;
-        left: 35%;
-        margin-top: 0;
-    }
 
     .text {
         margin-top: 0;
@@ -146,5 +144,9 @@
 @media screen and (min-width: 1600px) {
     .footer-gallery {
         bottom: 0px;
+    }
+
+    .login {
+        margin-top: 16em;
     }
 }
