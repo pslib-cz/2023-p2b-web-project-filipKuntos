@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../styles/layout.css" >
     <link rel="stylesheet" type="text/css" href="../styles/normalize.css" >
+    <link rel="stylesheet" type="text/css" href="../styles/layout.css" >
     <link rel="stylesheet" type="text/css" href="../styles/components.css" >
     <link rel="stylesheet" type="text/css" href="../styles/typography.css" >
     <script src="../script.js"></script>
@@ -13,22 +13,22 @@
 </head>
 <body class="body">
     <header class="header">
-        <div class="logo image">
-            <figure >
-                <img srcset="../Pictures/mobile-logo.png 480w, ../Pictures/desktop-logo.png 1920w"
-                 src="../Pictures/desktop-logo.png" sizes="(max-width: 600px) 1200px,
-                 1920px" alt="Nekopara Logo">
-            
-            </figure>
-        </div>
         <nav class="navbar">
-                <menu class="menu-toggle ">
-                    <li class="link"><a href="../index.html">Main Page</a></li>
-                    <li class="link"><a href="../Website/visualNovels.html">Visual Novels</a></li>
-                    <li class="link"><a href="../Website/characters.html">Characters</a></li>
-                    <li class="link"><a href="../Website/gallery.html">Gallery</a></li>
-                    <li class="link"><a href="../Website/login.html">Login</a></li>
-                </menu>
+            <div class="logo image">
+                <a href="../index.html" >
+                    <img srcset="../Pictures/mobile-logo.png 480w, ../Pictures/desktop-logo.png 1920w"
+                    src="../Pictures/desktop-logo.png" sizes="(max-width: 600px) 1200px,
+                    1920px"  alt="Nekopara Logo">
+                
+                </a>
+            </div>
+        
+            <menu class="menu-toggle ">
+                <li class="link"><a href="../Website/visualNovels.html">Visual Novels</a></li>
+                <li class="link"><a href="../Website/characters.html">Characters</a></li>
+                <li class="link"><a href="../Website/gallery.html">Gallery</a></li>
+                <li class="link"><a href="../Website/login.html">Login</a></li>
+            </menu>
                 <div role="button" aria-label="hamburger button" class="hamburger hamburger--button">
                     <span></span>
                     <span></span>
@@ -83,23 +83,18 @@
             <p>Sources: Steam  Nekopara.Fandom.com  BingAI  Nekopara.com</p>
         </div>
         <div class="svg">
-            <a href="https://twitter.com/nekopara_pr">
                 <div class="image">
-                    <figure>
-                        <img src="../Pictures/svg/twitter.svg" alt="twitter">
+                    <a href="https://twitter.com/nekopara_pr">
+                        <img src="../Pictures/svg/twitter.svg"  alt="twitter">
                         
-                    </figure>
+                    </a>
                 </div >
-            </a>
-            <a href="https://nekopara.com/en/">
             <div class="image">
-                <figure>
+                <a href="https://nekopara.com/en/">
                     <img src="../Pictures/svg/earth.svg" alt="Nekopara.com">
-                </figure>
+                </a>
             </div >
-            </a>
         </div>
-        
     </footer>
 </body>
 </html>

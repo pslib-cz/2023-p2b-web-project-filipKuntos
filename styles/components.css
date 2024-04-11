@@ -1,7 +1,4 @@
-/* hlavní logo stránky v header */
-.logo  {
-    margin-left: -2em;
-}
+
 
 /* blok divu obsahující text*/
 .text{
@@ -21,7 +18,8 @@
 
 /* odsazení pro blok textu na stránkách character*/
 .text-grid {
-    margin-bottom: 2em;
+    display: grid;
+    justify-content: center;
 }
 
 /* styly pro stránku login*/
@@ -90,12 +88,26 @@
 /* styly pro footer svg */
 .svg {
     display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 100%;
+    margin-bottom: 2em;
     
 }
 
 .svg figure {
     margin: 1em;
 }
+
+img {
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+
+}
+
+
 
 /* otočení druhého obrázku */
 .login-image-2 {
@@ -112,18 +124,9 @@
     margin: 0;
 }
 
-/* tablet*/
-@media screen and (min-width: 768px){
-    .header {
-        justify-content: center;
-    }
-
-    .logo {
-        max-width: max-content;
-        
-    }
-
- }
+#gallery figure {
+    margin-bottom: 1em;
+}
 
 
 
