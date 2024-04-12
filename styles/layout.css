@@ -102,9 +102,8 @@ menu {
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
-        top: 100%;
-        left: 0%;
-
+        top: 1em;
+        right: 4em;
         padding: 1em;
         gap: 1em;
         overflow: hidden;
@@ -112,6 +111,7 @@ menu {
         transition: transform 0.5s;
         transform: scaleY(0);
         transform-origin: top;
+        border: 1px solid black;
     }
 
     .navbar:has(.checkbox:checked) menu {
@@ -166,7 +166,6 @@ menu {
     
 
     menu.is-active {
-        position: relative;
         transform: scaleY(1);
 
     }
