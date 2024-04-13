@@ -1,68 +1,65 @@
 body {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 menu li {
-    display: block;
+  display: block;
 }
 
 /* odkaz v navbaru*/
-.link a{
-    text-decoration: none;
-    color: black;
+.link a {
+  text-decoration: none;
+  color: black;
 }
 
 a:hover {
-    color: #F08080;
+  color: #f08080;
 }
 
 /* nadpis stránky */
 .headline {
-    text-align: center;
-
+  text-align: center;
 }
 
 /* podnadpis stránky*/
 .text h3 {
-    margin-bottom: 0em;
+  margin-bottom: 0em;
 }
 
 /* styly pro steam odkaz*/
 .steam-link {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 .steam-link a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* styly pro zarovnání textu v login*/
 .login-headline {
-    text-align: center;
+  text-align: center;
 }
 
 .login-text {
-    padding-left: 2em;
-    padding-right: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 /* zarovnání footer textu*/
 .footer-text {
-    padding-left: 0.5em;
+  padding-left: 0.5em;
 }
 
 /* hamburger menu*/
 @media screen and (max-width: 768px) {
-    menu li {
-        min-width: 4em;
-    }
+  menu li {
+    min-width: 4em;
+  }
 }
 /* tablet*/
-@media screen and (min-width: 768px){ 
-    /* odsazení textu*/
-    .text p{
+@media screen and (min-width: 768px) {
+  /* odsazení textu*/
+  .text p {
     margin-right: 2em;
+  }
 }
-
-}
-
