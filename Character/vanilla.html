@@ -1,104 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../styles/normalize.css" >
-    <link rel="stylesheet" type="text/css" href="../styles/components.css" >
-    <link rel="stylesheet" type="text/css" href="../styles/layout.css" >
-    <link rel="stylesheet" type="text/css" href="../styles/typography.css" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="../styles/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/components.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/layout.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/typography.css" />
     <script src="../script.js"></script>
-    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon" />
     <title>Vanilla | NekoparaUniverse</title>
-</head>
-<body class="body">
+  </head>
+  <body class="body">
     <header class="header">
-        <nav class="navbar">
-            <div class="logo image">
-                <a href="../index.html" >
-                    <img srcset="../Pictures/mobile-logo.png 480w, ../Pictures/desktop-logo.png 1920w"
-                    src="../Pictures/desktop-logo.png" sizes="(max-width: 600px) 1200px,
-                    1920px"  alt="Nekopara Logo">
-                
-                </a>
-            </div>
-        
-            <menu class="menu-toggle ">
-                <li class="link"><a href="../Website/visualNovels.html">Visual Novels</a></li>
-                <li class="link"><a href="../Website/characters.html">Characters</a></li>
-                <li class="link"><a href="../Website/gallery.html">Gallery</a></li>
-                <li class="link"><a href="../Website/login.html">Login</a></li>
-            </menu>
-                <div role="button" aria-label="hamburger button" class="hamburger hamburger--button">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-        </nav>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="../index.html">
+            <img
+              srcset="
+                ../Pictures/mobile-logo.png   480w,
+                ../Pictures/desktop-logo.png 1920w
+              "
+              src="../Pictures/desktop-logo.png"
+              sizes="(max-width: 600px) 1200px,
+                    1920px"
+              alt="Nekopara Logo"
+            />
+          </a>
+        </div>
+
+        <menu class="menu-toggle">
+          <li class="link">
+            <a href="../Website/visualNovels.html">Visual Novels</a>
+          </li>
+          <li class="link">
+            <a href="../Website/characters.html">Characters</a>
+          </li>
+          <li class="link"><a href="../Website/gallery.html">Gallery</a></li>
+          <li class="link"><a href="../Website/login.html">Login</a></li>
+        </menu>
+        <div
+          role="button"
+          aria-label="hamburger button"
+          class="hamburger hamburger--button"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
     </header>
-    <main class="main">
-        <section class="section grid-character">
+    <main>
+      <section class="grid-character">
+        <div class="image-grid-1">
+          <img
+            srcset="
+              ../Pictures/character/mobile-vanilla.png   480w,
+              ../Pictures/character/desktop-vanilla.png 1920w
+            "
+            src="../Pictures/character/desktop-vanilla.png"
+            sizes="(max-width: 600px) 1200px,
+                            1920px"
+            alt="Image of Nekopara Vanilla"
+          />
+        </div>
+        <div class="image-grid-2">
+          <img
+            srcset="
+              ../Pictures/characters/mobile-vanilla.png   480w,
+              ../Pictures/characters/desktop-vanilla.png 1920w
+            "
+            src="../Pictures/characters/desktop-vanilla.png"
+            sizes="(max-width: 600px) 800px,
+                                1920px"
+            alt="Image of Nekopara Chibi Vanilla"
+          />
+        </div>
 
-                <div class="image image-grid image-grid-1">
-                    <a href="https://nekopara.fandom.com/wiki/Vanilla">
-                        <figure>
-                            <img srcset="../Pictures/character/mobile-vanilla.png 480w, ../Pictures/character/desktop-vanilla.png 1920w"
-                            src="../Pictures/character/desktop-vanilla.png" sizes="(max-width: 600px) 1200px,
-                            1920px" alt="Image of Nekopara Vanilla">
-                        </figure>
-                    </a>
-                </div>
-                <div class="character image-character image-grid-2">
-                    <a href="../Website/characters.html">
-                        <div class="image image-grid-character">
-                            <figure>
-                                <img srcset="../Pictures/characters/mobile-vanilla.png 480w, ../Pictures/characters/desktop-vanilla.png 1920w"
-                                src="../Pictures/characters/desktop-vanilla.png" sizes="(max-width: 600px) 800px,
-                                1920px" alt="Image of Nekopara Chibi Vanilla">
-                            </figure>
-                        </div>
-                    </a>
-                </div>
-
-            <div class="text-grid">
-                <div class="text text-grid-1">
-                    <h3>Vanilla</h3>
-                    <p>A reserved-yet-clever catgirl of few 
-                        words who absolutely loves Chocola. </p>
-                    <p>She is Chocola’s twin sister and the 
-                        youngest among the Minaduki catgirls. 
-                        Vanilla is prone to be misunderstood 
-                        because she rarely expresses her 
-                        emotions. In fact, she is quite smart and 
-                        often makes some remarkable insights.
-                        Her sharp wit and I’ll-do-things-my-way 
-                        attitude make her Chocola’s complete 
-                        opposite. However, she remains both 
-                        kind-hearted and, well, catlike.</p>
-                </div>
-            </div>
-        </section>
+        <div class="text text-grid-1">
+          <h3>Vanilla</h3>
+          <p>
+            A reserved-yet-clever catgirl of few words who absolutely loves
+            Chocola.
+          </p>
+          <p>
+            She is Chocola’s twin sister and the youngest among the Minaduki
+            catgirls. Vanilla is prone to be misunderstood because she rarely
+            expresses her emotions. In fact, she is quite smart and often makes
+            some remarkable insights. Her sharp wit and I’ll-do-things-my-way
+            attitude make her Chocola’s complete opposite. However, she remains
+            both kind-hearted and, well, catlike.
+          </p>
+        </div>
+      </section>
     </main>
     <footer class="footer">
-        <div class="footer-text">
-            <p>Sources: Steam  Nekopara.Fandom.com  BingAI  Nekopara.com</p>
+      <div class="footer-text">
+        <p>Sources: Steam Nekopara.Fandom.com BingAI Nekopara.com</p>
+      </div>
+      <div class="svg">
+        <div>
+          <a href="https://twitter.com/nekopara_pr">
+            <img src="../Pictures/svg/twitter.svg" alt="twitter" />
+          </a>
         </div>
-        <div class="svg">
-                <div class="image">
-                    <a href="https://twitter.com/nekopara_pr">
-                        <img src="../Pictures/svg/twitter.svg"  alt="twitter">
-                        
-                    </a>
-                </div >
-            <div class="image">
-                <a href="https://nekopara.com/en/">
-                    <img src="../Pictures/svg/earth.svg" alt="Nekopara.com">
-                </a>
-            </div >
+        <div>
+          <a href="https://nekopara.com/en/">
+            <img src="../Pictures/svg/earth.svg" alt="Nekopara.com" />
+          </a>
         </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

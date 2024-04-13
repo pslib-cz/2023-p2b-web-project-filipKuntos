@@ -41,14 +41,14 @@ menu {
     background-color: #FCD5CE;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
 
 
     
 }
 
 /* pozicování malé postavy na stránkách character*/
-.image-character {
+.image-grid-2 {
     position: absolute;
     align-content: flex-end;
     right: 0;
@@ -58,21 +58,12 @@ menu {
 
 /* styly pro obrázky*/
 
-
-/* pozicování obrázků používající grid na pozicování*/
-.image-grid {
-    width: fit-content;
-}
-
 /* pozicování velké postavy na stránkách character*/
 .image-grid-1 {
     margin-top: 2em;
+    width: fit-content;
 }
 
-/* odsazení velké postavy na stránkách character*/
-.image-grid figure {
-    margin: 0;
-}
 
 /* základní grid pro stránky characters a gallery*/
 .grid-column {
@@ -81,6 +72,12 @@ menu {
     justify-content: center;
     justify-items: center;
     margin-bottom: 2em;
+    gap: 1em;
+}
+
+.grid-character {
+    display: grid;
+    justify-content: center;
 }
 
 
@@ -172,10 +169,6 @@ menu {
 
 
 
-    menu li {
-        min-width: 4em;
-    }
-
 }
 
 /* menší než tablet*/
@@ -196,7 +189,7 @@ menu {
     }
 
     /* zarovnání malé postavy na stránkách character*/
-    .image-character {
+    .image-grid-2 {
         top: 41em;
     }
 }
@@ -212,7 +205,7 @@ menu {
     
 
     /* zarovnání malé postavy na stránkách character*/
-    .image-character {
+    .image-grid-2 {
         top: 41em;
         right: 10%;
     }
@@ -277,10 +270,7 @@ menu {
         height: 320px;
     }
 
-    .text-grid {
-        display: block;
-
-    }
+    
 
     /* odsazení malé postavy na stránkách character*/
     .image-grid-2 {
@@ -321,9 +311,7 @@ menu {
 
     /* grid pro stránky character (jednotlivé stránky postav*/
     .grid-character {
-        display: grid;
         grid-template-areas: "ig-1 ig-2" "ig-1 tg-1";
-        justify-content: center;
         gap: 1em;
         justify-items: center;
 

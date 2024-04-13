@@ -1,161 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../styles/normalize.css" >
-    <link rel="stylesheet" type="text/css" href="../styles/layout.css" >
-    <link rel="stylesheet" type="text/css" href="../styles/components.css" >
-    <link rel="stylesheet" type="text/css" href="../styles/typography.css" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="../styles/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/layout.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/components.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/typography.css" />
     <script src="../script.js"></script>
-    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery-bundle.min.css">
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery-bundle.min.css"
+    />
     <title>Gallery | NekoparaUniverse</title>
-</head>
-<body class="body">
+  </head>
+  <body class="body">
     <header class="header">
-        <nav class="navbar">
-            <div class="logo image">
-                <a href="../index.html" >
-                    <img srcset="../Pictures/mobile-logo.png 480w, ../Pictures/desktop-logo.png 1920w"
-                    src="../Pictures/desktop-logo.png" sizes="(max-width: 600px) 1200px,
-                    1920px"  alt="Nekopara Logo">
-                
-                </a>
-            </div>
-        
-                <menu class="menu-toggle ">
-                    <li class="link"><a href="visualNovels.html">Visual Novels</a></li>
-                    <li class="link"><a href="characters.html">Characters</a></li>
-                    <li class="link"><a href="gallery.html">Gallery</a></li>
-                    <li class="link"><a href="login.html">Login</a></li>
-                </menu>
-                <div role="button" aria-label="hamburger button" class="hamburger hamburger--button">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-        </nav>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="../index.html">
+            <img
+              srcset="
+                ../Pictures/mobile-logo.png   480w,
+                ../Pictures/desktop-logo.png 1920w
+              "
+              src="../Pictures/desktop-logo.png"
+              sizes="(max-width: 600px) 1200px,
+                    1920px"
+              alt="Nekopara Logo"
+            />
+          </a>
+        </div>
+
+        <menu class="menu-toggle">
+          <li class="link"><a href="visualNovels.html">Visual Novels</a></li>
+          <li class="link"><a href="characters.html">Characters</a></li>
+          <li class="link"><a href="gallery.html">Gallery</a></li>
+          <li class="link"><a href="login.html">Login</a></li>
+        </menu>
+        <div
+          role="button"
+          aria-label="hamburger button"
+          class="hamburger hamburger--button"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
     </header>
-    <main class="main">
-        <div class="headline">
-            <h1>Gallery</h1>
+    <main>
+      <div class="headline">
+        <h1>Gallery</h1>
+      </div>
+      <div id="gallery" class="grid-column thumbnails">
+        <div>
+          <a href="../Pictures/gallery/full-1.png">
+            <img
+              src="../Pictures/gallery/desktop-1.png"
+              alt="Image from Nekopara Vol.1"
+            />
+          </a>
         </div>
-        <div id="gallery" class="grid-column thumbnails">
-            <div class="image image-grid">
-                <figure>
-                    <a href="../Pictures/gallery/full-1.png">
-                        <img src="../Pictures/gallery/desktop-1.png" alt="Image from Nekopara Vol.1">
-                    </a>
-                </figure>
-            </div>
-            <div class="image image-grid">
-                <figure>
-                    <a href="../Pictures/gallery/full-2.png">
-                        <img src="../Pictures/gallery/desktop-2.png" alt="Image from Nekopara Vol.1">
-                    </a>
-                </figure>
-            </div>
-            <div class="image image-grid">
-                <figure>
-                    <a href="../Pictures/gallery/full-3.png">
-                        <img src="../Pictures/gallery/desktop-3.png" alt="Image from Nekopara Vol.1">
-                    </a>
-                </figure>
-            </div>
-            <div class="image image-grid">
-                <figure>
-                    <a href="../Pictures/gallery/full-4.png">
-                        <img src="../Pictures/gallery/desktop-4.png" alt="Image from Nekopara Vol.0">
-                    </a>
-                </figure>
-            </div>
-            <div class="image image-grid">
-                <figure>
-                    <a href="../Pictures/gallery/full-5.png">
-                        <img src="../Pictures/gallery/desktop-5.png" alt="Image from Nekopara Vol.0">
-                    </a>
-                </figure>
-            </div>
-            <div class="image image-grid">
-                <figure>
-                    <a href="../Pictures/gallery/full-6.png">
-                        <img src="../Pictures/gallery/desktop-6.png" alt="Image from Nekopara Extra">
-                    </a>
-                </figure>
-            </div>
-            <div class="image image-grid">
-                <figure>
-                    <a href="../Pictures/gallery/full-7.png">
-                        <img src="../Pictures/gallery/desktop-7.png" alt="Image from Nekopara Vol.2">
-                    </a>
-                </figure>
-            </div>
-            <div class="image image-grid">
-                <figure>
-                    <a href="../Pictures/gallery/full-8.png">
-                        <img src="../Pictures/gallery/desktop-8.png" alt="Image from Nekopara Vol.2">
-                    </a>
-                </figure>
-            </div>
-            <div class="image image-grid">
-                <figure>
-                    <a href="../Pictures/gallery/full-9.png">
-                        <img src="../Pictures/gallery/desktop-9.png" alt="Image from Nekopara Vol.2">
-                    </a>
-                </figure>
-            </div>
-            <div class="image image-grid">
-                <figure>
-                    <a href="../Pictures/gallery/full-10.png">
-                        <img src="../Pictures/gallery/desktop-10.png" alt="Image from Nekopara Vol.3">
-                    </a>
-                </figure>
-            </div>
-            <div class="image image-grid">
-                <figure>
-                    <a href="../Pictures/gallery/full-11.png">
-                        <img src="../Pictures/gallery/desktop-11.png" alt="Image from Nekopara Vol.3">
-                    </a>
-                </figure>
-            </div>
+        <div>
+          <a href="../Pictures/gallery/full-2.png">
+            <img
+              src="../Pictures/gallery/desktop-2.png"
+              alt="Image from Nekopara Vol.1"
+            />
+          </a>
         </div>
+        <div>
+          <a href="../Pictures/gallery/full-3.png">
+            <img
+              src="../Pictures/gallery/desktop-3.png"
+              alt="Image from Nekopara Vol.1"
+            />
+          </a>
+        </div>
+        <div>
+          <a href="../Pictures/gallery/full-4.png">
+            <img
+              src="../Pictures/gallery/desktop-4.png"
+              alt="Image from Nekopara Vol.0"
+            />
+          </a>
+        </div>
+        <div>
+          <a href="../Pictures/gallery/full-5.png">
+            <img
+              src="../Pictures/gallery/desktop-5.png"
+              alt="Image from Nekopara Vol.0"
+            />
+          </a>
+        </div>
+        <div>
+          <a href="../Pictures/gallery/full-6.png">
+            <img
+              src="../Pictures/gallery/desktop-6.png"
+              alt="Image from Nekopara Extra"
+            />
+          </a>
+        </div>
+        <div>
+          <a href="../Pictures/gallery/full-7.png">
+            <img
+              src="../Pictures/gallery/desktop-7.png"
+              alt="Image from Nekopara Vol.2"
+            />
+          </a>
+        </div>
+        <div>
+          <a href="../Pictures/gallery/full-8.png">
+            <img
+              src="../Pictures/gallery/desktop-8.png"
+              alt="Image from Nekopara Vol.2"
+            />
+          </a>
+        </div>
+        <div>
+          <a href="../Pictures/gallery/full-9.png">
+            <img
+              src="../Pictures/gallery/desktop-9.png"
+              alt="Image from Nekopara Vol.2"
+            />
+          </a>
+        </div>
+        <div>
+          <a href="../Pictures/gallery/full-10.png">
+            <img
+              src="../Pictures/gallery/desktop-10.png"
+              alt="Image from Nekopara Vol.3"
+            />
+          </a>
+        </div>
+        <div>
+          <a href="../Pictures/gallery/full-11.png">
+            <img
+              src="../Pictures/gallery/desktop-11.png"
+              alt="Image from Nekopara Vol.3"
+            />
+          </a>
+        </div>
+      </div>
     </main>
     <footer class="footer">
-        <div class="footer-text">
-            <p>Sources: Steam  Nekopara.Fandom.com  BingAI  Nekopara.com</p>
+      <div class="footer-text">
+        <p>Sources: Steam Nekopara.Fandom.com BingAI Nekopara.com</p>
+      </div>
+      <div class="svg">
+        <div>
+          <a href="https://twitter.com/nekopara_pr">
+            <img src="../Pictures/svg/twitter.svg" alt="twitter" />
+          </a>
         </div>
-        <div class="svg">
-                <div class="image">
-                    <a href="https://twitter.com/nekopara_pr">
-                        <img src="../Pictures/svg/twitter.svg"  alt="twitter">
-                        
-                    </a>
-                </div >
-            <div class="image">
-                <a href="https://nekopara.com/en/">
-                    <img src="../Pictures/svg/earth.svg" alt="Nekopara.com">
-                </a>
-            </div >
+        <div>
+          <a href="https://nekopara.com/en/">
+            <img src="../Pictures/svg/earth.svg" alt="Nekopara.com" />
+          </a>
         </div>
+      </div>
     </footer>
     <script type="module">
-        import lightgallery from 'https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/+esm'
-        import lgThumbnail from 'https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/thumbnail/+esm'
-        import lgPager from 'https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/pager/+esm'
-        import lgZoom from 'https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/zoom/+esm'
-        import lgAutoplay from 'https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/autoplay/+esm'
+      import lightgallery from "https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/+esm";
+      import lgThumbnail from "https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/thumbnail/+esm";
+      import lgPager from "https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/pager/+esm";
+      import lgZoom from "https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/zoom/+esm";
+      import lgAutoplay from "https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/autoplay/+esm";
 
-        lightgallery(document.querySelector('.thumbnails'), 
-        {
-            selector: document.querySelectorAll('.thumbnails a'),
-            plugins: [lgThumbnail, lgPager, lgZoom, lgAutoplay],
-            slideShowAutoplay: true,
-            slideShowInterval:2000,
-        });
+      lightgallery(document.querySelector(".thumbnails"), {
+        selector: document.querySelectorAll(".thumbnails a"),
+        plugins: [lgThumbnail, lgPager, lgZoom, lgAutoplay],
+        slideShowAutoplay: true,
+        slideShowInterval: 2000,
+      });
     </script>
-</body>
+  </body>
 </html>

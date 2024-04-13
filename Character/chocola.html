@@ -1,104 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../styles/normalize.css" >
-    <link rel="stylesheet" type="text/css" href="../styles/components.css" >
-    <link rel="stylesheet" type="text/css" href="../styles/layout.css" >
-    <link rel="stylesheet" type="text/css" href="../styles/typography.css" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="../styles/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/components.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/layout.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/typography.css" />
     <script src="../script.js"></script>
-    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon" />
     <title>Chocola | NekoparaUniverse</title>
-</head>
-<body class="body">
+  </head>
+  <body class="body">
     <header class="header">
-        <nav class="navbar">
-            <div class="logo image">
-                <a href="../index.html" >
-                    <img srcset="../Pictures/mobile-logo.png 480w, ../Pictures/desktop-logo.png 1920w"
-                    src="../Pictures/desktop-logo.png" sizes="(max-width: 600px) 1200px,
-                    1920px"  alt="Nekopara Logo">
-                
-                </a>
-            </div>
-        
-                <menu class="menu-toggle ">
-                    <li class="link"><a href="../Website/visualNovels.html">Visual Novels</a></li>
-                    <li class="link"><a href="../Website/characters.html">Characters</a></li>
-                    <li class="link"><a href="../Website/gallery.html">Gallery</a></li>
-                    <li class="link"><a href="../Website/login.html">Login</a></li>
-                </menu>
-                <div role="button" aria-label="hamburger button" class="hamburger hamburger--button">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-        </nav>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="../index.html">
+            <img
+              srcset="
+                ../Pictures/mobile-logo.png   480w,
+                ../Pictures/desktop-logo.png 1920w
+              "
+              src="../Pictures/desktop-logo.png"
+              sizes="(max-width: 600px) 1200px,
+                    1920px"
+              alt="Nekopara Logo"
+            />
+          </a>
+        </div>
+
+        <menu class="menu-toggle">
+          <li class="link">
+            <a href="../Website/visualNovels.html">Visual Novels</a>
+          </li>
+          <li class="link">
+            <a href="../Website/characters.html">Characters</a>
+          </li>
+          <li class="link"><a href="../Website/gallery.html">Gallery</a></li>
+          <li class="link"><a href="../Website/login.html">Login</a></li>
+        </menu>
+        <div
+          role="button"
+          aria-label="hamburger button"
+          class="hamburger hamburger--button"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
     </header>
-    <main class="main">
-        <section class="section grid-character">
-            
-                <div class="image image-grid image-grid-1">
-                    <a href="https://nekopara.fandom.com/wiki/Chocola">
+    <main>
+      <section class="grid-character">
+        <div class="image-grid-1">
+          <a href="https://nekopara.fandom.com/wiki/Chocola">
+            <img
+              srcset="
+                ../Pictures/character/mobile-chocola.png   480w,
+                ../Pictures/character/desktop-chocola.png 1920w
+              "
+              src="../Pictures/character/desktop-chocola.png"
+              sizes="(max-width: 600px) 1200px,
+                            1920px"
+              alt="Image of Nekopara Chocola"
+            />
+          </a>
+        </div>
+        <div class="image-grid-2">
+          <img
+            srcset="
+              ../Pictures/characters/mobile-chocola.png   480w,
+              ../Pictures/characters/desktop-chocola.png 1920w
+            "
+            src="../Pictures/characters/desktop-chocola.png"
+            sizes="(max-width: 600px) 800px,
+                                1920px"
+            alt="Image of Nekopara Chibi Chocola"
+          />
+        </div>
 
-                            <img srcset="../Pictures/character/mobile-chocola.png 480w, ../Pictures/character/desktop-chocola.png 1920w"
-                            src="../Pictures/character/desktop-chocola.png" sizes="(max-width: 600px) 1200px,
-                            1920px" alt="Image of Nekopara Chocola">
-
-                    </a>
-                </div>
-                <div class="character image-character image-grid-2">
-
-                        <div class="image image-grid-character">
-                            <a href="../Website/characters.html">
-                                <img srcset="../Pictures/characters/mobile-chocola.png 480w, ../Pictures/characters/desktop-chocola.png 1920w"
-                                src="../Pictures/characters/desktop-chocola.png" sizes="(max-width: 600px) 800px,
-                                1920px" alt="Image of Nekopara Chibi Chocola">
-                            </a>
-                        </div>
-
-                </div>
-            
-            <div class="text-grid">
-                <div class="text text-grid-1">
-                    <h3>Chocola</h3>
-                    <p>A cheerful and straightforward catgirl with a dog-like 
-                        personality who is very fond of her master. </p>
-                    <p>She is Vanilla’s twin sister and the 
-                        youngest among the Minaduki catgirls. 
-                        She's not good at dealing with 
-                        complicated matters, but she is always 
-                        friendly and energetic. She tends to 
-                        leap into action before fully thinking 
-                        things through. Despite her clumsy 
-                        moments, her go-getter attitude earns 
-                        plenty of love from everybody around 
-                        her.</p>
-                </div>
-            </div>
-        </section>
+        <div class="text text-grid-1">
+          <h3>Chocola</h3>
+          <p>
+            A cheerful and straightforward catgirl with a dog-like personality
+            who is very fond of her master.
+          </p>
+          <p>
+            She is Vanilla’s twin sister and the youngest among the Minaduki
+            catgirls. She's not good at dealing with complicated matters, but
+            she is always friendly and energetic. She tends to leap into action
+            before fully thinking things through. Despite her clumsy moments,
+            her go-getter attitude earns plenty of love from everybody around
+            her.
+          </p>
+        </div>
+      </section>
     </main>
-        <footer class="footer">
-            <div class="footer-text">
-                <p>Sources: Steam  Nekopara.Fandom.com  BingAI  Nekopara.com</p>
-            </div>
-            <div class="svg">
-                    <div class="image">
-                        <a href="https://twitter.com/nekopara_pr">
-                            <img src="../Pictures/svg/twitter.svg"  alt="twitter">
-                            
-                        </a>
-                    </div >
-                <div class="image">
-                    <a href="https://nekopara.com/en/">
-                        <img src="../Pictures/svg/earth.svg" alt="Nekopara.com">
-                    </a>
-                </div >
-            </div>
-        </footer>
-</body>
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Sources: Steam Nekopara.Fandom.com BingAI Nekopara.com</p>
+      </div>
+      <div class="svg">
+        <div>
+          <a href="https://twitter.com/nekopara_pr">
+            <img src="../Pictures/svg/twitter.svg" alt="twitter" />
+          </a>
+        </div>
+        <div>
+          <a href="https://nekopara.com/en/">
+            <img src="../Pictures/svg/earth.svg" alt="Nekopara.com" />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

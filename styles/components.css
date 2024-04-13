@@ -23,6 +23,7 @@
     justify-content: center;
 }
 
+
 /* styly pro stránku login*/
 /* zarovnání loginu*/
 .main-login {
@@ -95,15 +96,11 @@
     display: flex;
     width: 60%;
     justify-content: space-around;
-    height: 100%;
-    margin-bottom: 1em;
     
 }
 
-.svg figure {
-    margin: 1em;
-}
 
+/* responzivní obrázek*/
 img {
     width: 100%;
     display: block;
@@ -112,30 +109,18 @@ img {
 
 }
 
-.image figure {
-    margin: 0;
+/* odsazení obrázků na loginu*/
+
+.login-image {
+    margin: 1em;
 }
-
-
 
 /* otočení druhého obrázku */
 .login-image-2 {
     transform: rotateY(180deg);
 }
 
-/* odsazení obrázků v loginu*/
-.login-image figure {
-    margin: 1em;
-}
 
-/* odsazení malé postavy na stránkách character*/
-.image-character figure {
-    margin: 0;
-}
-
-#gallery figure {
-    margin-bottom: 1em;
-}
 @media screen and (min-width: 600px){ 
     .svg {
         width: 20%;
