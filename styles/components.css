@@ -36,33 +36,28 @@
   min-width: 340px;
 }
 
-.grid-vn .image-7 {
-  margin-bottom: 1em;
-}
-
 /* styly pro steam odkaz*/
 .steam-link {
     margin-bottom: 1em;
     width: 160px;
   }
 
+
+/* svg odkaz na vrácení na stránku characters*/
 .undo {
     width: 40px;
     margin-top: 1em;
     margin-left: 1em;
 }
 
-.grid-index .image-5 {
-  margin-bottom: 1em;
-}
 
-/* pro tlačítko login*/
+/* pro tlačítko login-uvnitř*/
 .button-flex {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
+/* pro tlačítko login-zvenčí*/
 .button {
   width: 6em;
   height: 2em;
@@ -84,8 +79,8 @@
   border: 1px solid black;
 }
 
-/*odsazení obrázků po stranách*/
-.login-picture {
+/*odsazení dolní strany loginu*/
+.login-bottom {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,14 +115,6 @@ img {
 @media screen and (min-width: 600px) {
   .svg {
     width: 20%;
-  }
-
-  .grid-vn .image-7 {
-    margin-bottom: 0;
-  }
-
-  .grid-index .image-5 {
-    margin-bottom: 0;
   }
 
   .undo {

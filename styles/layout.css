@@ -1,3 +1,5 @@
+/* styly používající characters jsou pro stránku kde jsou všechny obrázky postav a styly používající character jsou pro stránku kde jsou informacce o jedné postavě*/
+
 /* styl pro body*/
 body {
   background-color: #f8edeb;
@@ -11,15 +13,17 @@ body {
   background-color: #fcd5ce;
 }
 
+/* svg odkaz na vrácení na stránku characters-vypnutí*/
 .undo {
     display: none;
 }
 
-/* styly pro navbar*/
+/* vypnutí hamburger menu*/
 .hamburger {
   display: none;
 }
 
+/* header navbar*/
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -27,6 +31,7 @@ body {
   padding: 1em;
 }
 
+/* menu s odkazy-větší obrazovky*/
 menu {
   display: flex;
   gap: 2rem;
@@ -57,6 +62,14 @@ menu {
   width: fit-content;
 }
 
+/* základní grid pro stránky main page a visual novels*/
+.grid {
+    display: grid;
+    justify-content: center;
+    gap: 0.5em;
+    margin-bottom: 2em;
+  }
+  
 /* základní grid pro stránky characters a gallery*/
 .grid-column {
   display: grid;
@@ -67,6 +80,7 @@ menu {
   gap: 1em;
 }
 
+/* grid pro stránky characters*/
 .grid-character {
   display: grid;
   justify-content: center;
@@ -153,12 +167,8 @@ menu {
 
 /* menší než tablet*/
 @media screen and (min-width: 600px) {
-  /* základní grid pro stránky main page a visual novels*/
   .grid {
-    display: grid;
-    justify-content: center;
     gap: 1em;
-    margin-bottom: 2em;
   }
 
   /* zarovnání prvků ve footer*/
@@ -183,6 +193,38 @@ menu {
   .navbar,
   .footer {
     justify-content: space-evenly;
+  }
+/* mezi tabletem a notebookem*/
+@media screen and (min-width: 1120px) {
+
+  /* odsazení textu na stránkách character*/
+  .text-grid-1 {
+    grid-area: tg-1;
+    height: 320px;
+  }
+
+  /* odsazení malé postavy na stránkách character*/
+  .image-grid-2 {
+    grid-area: ig-2;
+    position: initial;
+    display: block;
+    width: fit-content;
+  }
+
+  /* odsazení velké postavy na stránkách character*/
+  .image-grid-1 {
+    grid-area: ig-1;
+    display: grid;
+    justify-content: flex-end;
+  }
+
+
+
+  /* grid pro stránky character (jednotlivé stránky postav*/
+  .grid-character {
+    grid-template-areas: "ig-1 ig-2" "ig-1 tg-1";
+    gap: 1em;
+    justify-items: center;
   }
 }
 
@@ -233,27 +275,7 @@ menu {
     grid-area: i-7;
   }
 
-  /* odsazení textu na stránkách character*/
-  .text-grid-1 {
-    grid-area: tg-1;
-    height: 320px;
-  }
-
-  /* odsazení malé postavy na stránkách character*/
-  .image-grid-2 {
-    grid-area: ig-2;
-    position: initial;
-    display: block;
-    width: fit-content;
-  }
-
-  /* odsazení velké postavy na stránkách character*/
-  .image-grid-1 {
-    grid-area: ig-1;
-    display: grid;
-    justify-content: flex-end;
-  }
-
+  
   /* grid pro main page*/
   .grid-index {
     grid-template-areas: "t-1 i-1" "i-2 t-2" "t-3 i-3" "i-4 t-4" "t-5 i-5";
@@ -271,10 +293,6 @@ menu {
     grid-template-columns: 400px repeat(2, 400px);
   }
 
-  /* grid pro stránky character (jednotlivé stránky postav*/
-  .grid-character {
-    grid-template-areas: "ig-1 ig-2" "ig-1 tg-1";
-    gap: 1em;
-    justify-items: center;
-  }
+  
+}
 }

@@ -1,7 +1,9 @@
+/* font*/
 body {
   font-family: "Roboto", sans-serif;
 }
 
+/* menu pro větší obrazovky*/
 menu li {
   display: block;
 }
