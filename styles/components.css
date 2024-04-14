@@ -40,6 +40,18 @@
   margin-bottom: 1em;
 }
 
+/* styly pro steam odkaz*/
+.steam-link {
+    margin-bottom: 1em;
+    width: 160px;
+  }
+
+.undo {
+    width: 40px;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
 .grid-index .image-5 {
   margin-bottom: 1em;
 }
@@ -117,6 +129,12 @@ img {
   .grid-index .image-5 {
     margin-bottom: 0;
   }
+
+  .undo {
+    width: 60px;
+    margin-top: 2em;
+    margin-left: 2em;
+}
 }
 
 @media screen and (min-width: 1280px) {
@@ -128,4 +146,11 @@ img {
     margin-top: 0;
     margin-bottom: 0;
   }
+
+  /* styly pro steam odkaz*/
+.steam-link {
+    margin-bottom: 0;
+}
+
+
 }

@@ -26,14 +26,7 @@ a:hover {
   margin-bottom: 0em;
 }
 
-/* styly pro steam odkaz*/
-.steam-link {
-  margin-bottom: 1em;
-}
 
-.steam-link a {
-  text-decoration: none;
-}
 
 /* styly pro zarovnání textu v login*/
 .login-headline {

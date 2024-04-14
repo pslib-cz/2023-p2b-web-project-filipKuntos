@@ -11,6 +11,10 @@ body {
   background-color: #fcd5ce;
 }
 
+.undo {
+    display: none;
+}
+
 /* styly pro navbar*/
 .hamburger {
   display: none;
@@ -44,7 +48,7 @@ menu {
   position: absolute;
   align-content: flex-end;
   right: 0;
-  top: 33em;
+  top: 35em;
 }
 
 /* pozicování velké postavy na stránkách character*/
@@ -141,6 +145,10 @@ menu {
   menu.is-active {
     transform: scaleY(1);
   }
+
+  .undo {
+    display: block;
+  }
 }
 
 /* menší než tablet*/
@@ -160,7 +168,7 @@ menu {
 
   /* zarovnání malé postavy na stránkách character*/
   .image-grid-2 {
-    top: 41em;
+    top: 48em;
   }
 }
 
@@ -168,7 +176,7 @@ menu {
 @media screen and (min-width: 768px) {
   /* zarovnání malé postavy na stránkách character*/
   .image-grid-2 {
-    top: 41em;
+    top: 42em;
     right: 10%;
   }
 
