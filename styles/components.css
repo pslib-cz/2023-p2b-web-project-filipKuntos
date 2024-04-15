@@ -13,12 +13,6 @@
   margin-bottom: 1em;
 }
 
-/* odsazení pro blok textu na stránkách character*/
-.text-grid {
-  display: grid;
-  justify-content: center;
-}
-
 /* styly pro stránku login*/
 /* zarovnání loginu*/
 .main-login {
@@ -45,18 +39,11 @@
 
 /* svg odkaz na vrácení na stránku characters*/
 .undo {
-    width: 40px;
+    width: 80px;
     margin-top: 1em;
     margin-left: 1em;
 }
 
-
-/* pro tlačítko login-uvnitř*/
-.button-flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 /* pro tlačítko login-zvenčí*/
 .button {
   width: 6em;
@@ -134,10 +121,6 @@ img {
     margin-bottom: 0;
   }
 
-  /* styly pro steam odkaz*/
-.steam-link {
-    margin-bottom: 0;
-}
 
 
 }
