@@ -11,5 +11,5 @@ Cílem webu je udělat jednoduchou a přímočarou stránku pro lidi, kteří by
 
 Web má 14 stránek: 1. Hlavní stránka:Základní informace o sérii VN, anime adaptaci Nekopary, Nekopaře Ova, Nekopaře Ova Extra a o studiu NekoWorks, kde každý bude doplněný o obrázek. 2. Visual Novels: Základní informace o Nekopara Vol.0,1,2,3,4, 
 Nekopara Extra a Nekopara Catboys Paradise, opět doplněný obrázkem. 3. Nekopara Characters: Chibi obrázek 8 kočkoholek + mladší sestry, které vás po kliknutí přesměrují na samostatnou stránku o káždé z těchto postav (stránky 5-13). 
-4. Gallery: Několik obrázků (v tuto chvíli 8), které pocházejí ze hry. 5-13. Character: Individuální stránka pro každou z postav, na stránce bude velký obrázek postavy, zmenšený chibi obrázek postavy a krátký popisek ke každé z postav. 
+4. Gallery: Několik obrázků (v tuto chvíli 11), které pocházejí ze hry. 5-13. Character: Individuální stránka pro každou z postav, na stránce bude velký obrázek postavy, zmenšený chibi obrázek postavy a krátký popisek ke každé z postav. 
 14. Stránka určená pro login, kde se vyplňuje E-mail a heslo.
