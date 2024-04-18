@@ -49,12 +49,7 @@ a:hover {
   padding-left: 0.5em;
 }
 
-/* hamburger menu*/
-@media screen and (max-width: 768px) {
-  menu li {
-    min-width: 4em;
-  }
-}
+
 /* tablet*/
 @media screen and (min-width: 768px) {
   /* odsazení textu*/

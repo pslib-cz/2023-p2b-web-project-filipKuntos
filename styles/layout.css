@@ -100,8 +100,8 @@ menu {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    top: 1em;
-    right: 4em;
+    top: 9%;
+    right: 0em;
     padding: 1em;
     gap: 1em;
     overflow: hidden;
@@ -110,6 +110,8 @@ menu {
     transform: scaleY(0);
     transform-origin: top;
     border: 1px solid black;
+    align-items: center;
+    width: 100%;
   }
 
   .navbar:has(.checkbox:checked) menu {
@@ -134,35 +136,45 @@ menu {
     width: 100%;
     border-radius: calc(var(--line) / 2);
     background: #000;
-    transition: transform 1s, opacity 0.2s 0.9s, translate 0.7s 0.8s;
+    transition: transform .5s, opacity 0.2s 0.9s, translate 0.7s 0.8s;
     transform-origin: right center;
   }
 
   .hamburger.is-active span:nth-of-type(1) {
     transform: translateY(10%) rotate(-50deg);
+
   }
 
   .hamburger span:nth-of-type(2) {
-    transition: opacity 1s;
+    transition: opacity .5s;
     opacity: 1;
   }
 
   .hamburger.is-active span:nth-of-type(2) {
-    transition: opacity 1s;
+    transition: opacity .5s;
     opacity: 0;
   }
 
   .hamburger.is-active span:nth-of-type(3) {
     transform: translateY(0%) rotate(50deg);
+
   }
 
   menu.is-active {
     transform: scaleY(1);
+    
+    
   }
 
   .undo {
     display: block;
   }
+
+  menu li {
+    border-bottom: 1px solid black;
+  }
+
+  
 }
 
 /* menší než tablet*/
