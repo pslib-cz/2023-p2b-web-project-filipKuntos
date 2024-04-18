@@ -11,6 +11,7 @@ body {
 /* styly pro header*/
 .header {
   background-color: #fcd5ce;
+
 }
 
 /* svg odkaz na vrácení na stránku characters-vypnutí*/
@@ -100,7 +101,7 @@ menu {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    top: 9%;
+    top: 5em;
     right: 0em;
     padding: 1em;
     gap: 1em;
@@ -179,6 +180,9 @@ menu {
 
 /* menší než tablet*/
 @media screen and (min-width: 600px) {
+  menu {
+    top: 7em;
+  }
   .grid {
     gap: 1em;
   }
